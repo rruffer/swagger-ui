@@ -22,7 +22,7 @@ export default class TryItOutButton extends React.Component {
       <div className="try-out">
         {
           enabled ? <button className="btn try-out__btn cancel" onClick={ onCancelClick }>Cancelar</button>
-                  : <button className="btn try-out__btn" onClick={ onTryoutClick }>Experimente </button>
+                  : <button className="btn try-out__btn" onClick={ onTryoutClick }>Testar </button>
         }
       </div>
     )

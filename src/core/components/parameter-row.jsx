@@ -177,7 +177,7 @@ export default class ParameterRow extends Component {
       isDisplayParamEnum = true
     }
 
-    // Default and Example Value for readonly doc
+    // Default and Exemplo de valor for readonly doc
     if ( param !== undefined ) {
       paramDefaultValue = schema.get("default")
       paramExample = param.get("example")

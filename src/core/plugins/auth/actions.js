@@ -46,7 +46,7 @@ export const preAuthorizeImplicit = (payload) => ( { authActions, errActions } )
       authId: name,
       source: "auth",
       level: "warning",
-      message: "Authorization may be unsafe, passed state was changed in server Passed state wasn't returned from auth server"
+      message: "A autorização pode ser insegura, o estado passado foi alterado no servidor. O estado passado não foi retornado do servidor de autenticação"
     })
   }
 

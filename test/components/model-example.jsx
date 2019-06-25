@@ -55,7 +55,7 @@ describe("<ModelExample/>", function(){
       expect(node.name()).toEqual("li")
       expect(node.hasClass("tabitem")).toEqual(true)
     })
-    expect(tabs.at(0).text()).toEqual("Example Value")
+    expect(tabs.at(0).text()).toEqual("Exemplo de valor")
     expect(tabs.at(1).text()).toEqual("Model")
   })
 
