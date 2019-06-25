@@ -79,19 +79,19 @@ export default class Parameters extends Component {
       <div className="opblock-section">
         <div className="opblock-section-header">
           <div className="tab-header">
-            <h4 className="opblock-title">Parameters</h4>
+            <h4 className="opblock-title">Parâmetros</h4>
           </div>
             { allowTryItOut ? (
               <TryItOutButton enabled={ tryItOutEnabled } onCancelClick={ onCancelClick } onTryoutClick={ onTryoutClick } />
             ) : null }
         </div>
-        { !parameters.count() ? <div className="opblock-description-wrapper"><p>No parameters</p></div> :
+        { !parameters.count() ? <div className="opblock-description-wrapper"><p>Sem parâmetros</p></div> :
           <div className="table-container">
             <table className="parameters">
               <thead>
                 <tr>
-                  <th className="col col_header parameters-col_name">Name</th>
-                  <th className="col col_header parameters-col_description">Description</th>
+                  <th className="col col_header parameters-col_name">Nome</th>
+                  <th className="col col_header parameters-col_description">Descrição</th>
                 </tr>
               </thead>
               <tbody>

@@ -17,7 +17,7 @@ Headers.propTypes = {
 const Duration = ( { duration } ) => {
   return (
     <div>
-      <h5>Request duration</h5>
+      <h5>Request duração</h5>
       <pre>{duration} ms</pre>
     </div>
   )
@@ -83,8 +83,8 @@ export default class LiveResponse extends React.Component {
         <table className="responses-table live-responses-table">
           <thead>
           <tr className="responses-header">
-            <td className="col col_header response-col_status">Code</td>
-            <td className="col col_header response-col_description">Details</td>
+            <td className="col col_header response-col_status">Código</td>
+            <td className="col col_header response-col_description">Detalhes</td>
           </tr>
           </thead>
           <tbody>
@@ -93,7 +93,7 @@ export default class LiveResponse extends React.Component {
                 { status }
                 {
                   notDocumented ? <div className="response-undocumented">
-                                    <i> Undocumented </i>
+                                    <i> Não documentado </i>
                                   </div>
                                 : null
                 }

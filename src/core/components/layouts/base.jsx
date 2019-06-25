@@ -48,7 +48,7 @@ export default class BaseLayout extends React.Component {
     if(loadingStatus === "failed") {
       loadingMessage = <div className="info">
         <div className="loading-container">
-          <h4 className="title">Failed to load API definition.</h4>
+          <h4 className="title">Falha ao carregar a definição da API.</h4>
           <Errors />
         </div>
       </div>
@@ -59,14 +59,14 @@ export default class BaseLayout extends React.Component {
       const lastErrMsg = lastErr ? lastErr.get("message") : ""
       loadingMessage = <div className="info" style={{ maxWidth: "880px", marginLeft: "auto", marginRight: "auto", textAlign: "center" }}>
         <div className="loading-container">
-          <h4 className="title">Failed to load remote configuration.</h4>
+          <h4 className="title">Falha ao carregar a configuração remota.</h4>
           <p>{lastErrMsg}</p>
         </div>
       </div>
     }
 
     if(!loadingMessage && isSpecEmpty) {
-      loadingMessage = <h4>No API definition provided.</h4>
+      loadingMessage = <h4>Nenhuma definição de API fornecida.</h4>
     }
 
     if(loadingMessage) {

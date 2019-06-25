@@ -57,20 +57,20 @@ export default class BasicAuth extends React.Component {
 
     return (
       <div>
-        <h4>Basic authorization<JumpToPath path={[ "securityDefinitions", name ]} /></h4>
-        { username && <h6>Authorized</h6> }
+        <h4>Autorização Básica<JumpToPath path={[ "securityDefinitions", name ]} /></h4>
+        { username && <h6>Autorizado(a)</h6> }
         <Row>
           <Markdown source={ schema.get("description") } />
         </Row>
         <Row>
-          <label>Username:</label>
+          <label>Usuário:</label>
           {
             username ? <code> { username } </code>
                      : <Col><Input type="text" required="required" name="username" onChange={ this.onChange }/></Col>
           }
         </Row>
         <Row>
-          <label>Password:</label>
+          <label>Senha:</label>
             {
               username ? <code> ****** </code>
                        : <Col><Input required="required"

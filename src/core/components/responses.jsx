@@ -83,7 +83,7 @@ export default class Responses extends React.Component {
         <div className="opblock-section-header">
           <h4>Responses</h4>
             { specSelectors.isOAS3() ? null : <label>
-              <span>Response content type</span>
+              <span>Response tipo de conteúdo</span>
               <ContentType value={producesValue}
                          onChange={this.onChangeProducesWrapper}
                          contentTypes={produces}
@@ -109,8 +109,8 @@ export default class Responses extends React.Component {
           <table className="responses-table">
             <thead>
               <tr className="responses-header">
-                <td className="col col_header response-col_status">Code</td>
-                <td className="col col_header response-col_description">Description</td>
+                <td className="col col_header response-col_status">Código</td>
+                <td className="col col_header response-col_description">Descrição</td>
                 { specSelectors.isOAS3() ? <td className="col col_header response-col_links">Links</td> : null }
               </tr>
             </thead>

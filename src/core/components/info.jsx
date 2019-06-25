@@ -134,7 +134,7 @@ export default class Info extends React.Component {
 
         {
           termsOfService && <div className="info__tos">
-            <Link target="_blank" href={ sanitizeUrl(termsOfService) }>Terms of service</Link>
+            <Link target="_blank" href={ sanitizeUrl(termsOfService) }>Termos de serviço</Link>
           </div>
         }
 

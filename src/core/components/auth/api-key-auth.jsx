@@ -56,18 +56,18 @@ export default class ApiKeyAuth extends React.Component {
           (apiKey)
           <JumpToPath path={[ "securityDefinitions", name ]} />
         </h4>
-        { value && <h6>Authorized</h6>}
+        { value && <h6>Autorizado(a)</h6>}
         <Row>
           <Markdown source={ schema.get("description") } />
         </Row>
         <Row>
-          <p>Name: <code>{ schema.get("name") }</code></p>
+          <p>Nome: <code>{ schema.get("name") }</code></p>
         </Row>
         <Row>
-          <p>In: <code>{ schema.get("in") }</code></p>
+          <p>Em: <code>{ schema.get("in") }</code></p>
         </Row>
         <Row>
-          <label>Value:</label>
+          <label>Valor:</label>
           {
             value ? <code> ****** </code>
                   : <Col><Input type="text" onChange={ this.onChange }/></Col>

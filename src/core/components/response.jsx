@@ -146,7 +146,7 @@ export default class Response extends React.Component {
                   contentTypes={ response.get("content") ? response.get("content").keySeq() : Seq() }
                   onChange={this._onContentTypeChange}
                   />
-                { controlsAcceptHeader ? <small>Controls <code>Accept</code> header.</small> : null }
+                { controlsAcceptHeader ? <small>Controles <code>Aceitar</code> header.</small> : null }
             </div>
              : null }
 
@@ -174,7 +174,7 @@ export default class Response extends React.Component {
             links.toSeq().map((link, key) => {
               return <OperationLink key={key} name={key} link={ link } getComponent={getComponent}/>
             })
-          : <i>No links</i>}
+          : <i>Sem links</i>}
         </td> : null}
       </tr>
     )

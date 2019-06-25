@@ -222,7 +222,7 @@ export default class ParameterRow extends Component {
             : null
           }
 
-          {(isFormData && !isFormDataSupported) && <div>Error: your browser does not support FormData</div>}
+          {(isFormData && !isFormDataSupported) && <div>Erro: o seu navegador não suporta FormData</div>}
 
           { bodyParam || !isExecute ? null
             : <JsonSchemaForm fn={fn}

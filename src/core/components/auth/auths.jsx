@@ -83,9 +83,9 @@ export default class Auths extends React.Component {
             <div className="auth-btn-wrapper">
               {
                 nonOauthDefinitions.size === authorizedAuth.size ? <Button className="btn modal-btn auth" onClick={ this.logoutClick }>Logout</Button>
-              : <Button type="submit" className="btn modal-btn auth authorize">Authorize</Button>
+              : <Button type="submit" className="btn modal-btn auth authorize">Autorizar</Button>
               }
-              <Button className="btn modal-btn auth btn-done" onClick={ this.close }>Close</Button>
+              <Button className="btn modal-btn auth btn-done" onClick={ this.close }>Fechar</Button>
             </div>
           </form>
         }
@@ -93,8 +93,8 @@ export default class Auths extends React.Component {
         {
           oauthDefinitions && oauthDefinitions.size ? <div>
           <div className="scope-def">
-            <p>Scopes are used to grant an application different levels of access to data on behalf of the end user. Each API may declare one or more scopes.</p>
-            <p>API requires the following scopes. Select which ones you want to grant to Swagger UI.</p>
+            <p>Os escopos são usados para conceder a um aplicativo diferentes níveis de acesso aos dados em nome do usuário final. Cada API pode declarar um ou mais escopos.</p>
+            <p>API requer os seguintes escopos. Selecione quais você deseja conceder à Swagger UI.</p>
           </div>
             {
               definitions.filter( schema => schema.get("type") === "oauth2")

@@ -14,7 +14,7 @@ export const ParameterIncludeEmpty = ({ param, isIncluded, onChange, isDisabled 
     "disabled": isDisabled
   })}>
     <input type="checkbox" disabled={isDisabled} checked={!isDisabled && isIncluded} onChange={onCheckboxChange} />
-    Send empty value
+    Enviar valor vazio
   </div>
 }
 ParameterIncludeEmpty.propTypes = {

@@ -38,7 +38,7 @@ export default class Errors extends React.Component {
     return (
       <pre className="errors-wrapper">
         <hgroup className="error">
-          <h4 className="errors__title">Errors</h4>
+          <h4 className="errors__title">Erros</h4>
           <button className="btn errors__clear-btn" onClick={ toggleVisibility }>{ isVisible ? "Hide" : "Show" }</button>
         </hgroup>
         <Collapse isOpened={ isVisible } animated >
@@ -76,7 +76,7 @@ const ThrownErrorItem = ( { error, jumpToLine } ) => {
             { error.get("message") }
           </span>
           <div style={{ "text-decoration": "underline", "cursor": "pointer" }}>
-            { errorLine && jumpToLine ? <a onClick={jumpToLine.bind(null, errorLine)}>Jump to line { errorLine }</a> : null }
+            { errorLine && jumpToLine ? <a onClick={jumpToLine.bind(null, errorLine)}>Ir para a linha { errorLine }</a> : null }
           </div>
         </div>
       }
@@ -105,7 +105,7 @@ const SpecErrorItem = ( { error, jumpToLine } ) => {
           <span style={{ whiteSpace: "pre-line"}}>{ error.get("message") }</span>
           <div style={{ "text-decoration": "underline", "cursor": "pointer" }}>
             { jumpToLine ? (
-              <a onClick={jumpToLine.bind(null, error.get("line"))}>Jump to line { error.get("line") }</a>
+              <a onClick={jumpToLine.bind(null, error.get("line"))}>Ir para a linha { error.get("line") }</a>
             ) : null }
           </div>
         </div>

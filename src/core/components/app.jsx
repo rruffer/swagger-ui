@@ -7,7 +7,7 @@ export default class App extends React.Component {
     let { getComponent, layoutSelectors } = this.props
     const layoutName = layoutSelectors.current()
     const Component = getComponent(layoutName, true)
-    return Component ? Component : ()=> <h1> No layout defined for &quot;{layoutName}&quot; </h1>
+    return Component ? Component : ()=> <h1> Nenhum layout definido para &quot;{layoutName}&quot; </h1>
   }
 
   render() {

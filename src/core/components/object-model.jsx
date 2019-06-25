@@ -80,7 +80,7 @@ export default class ObjectModel extends Component {
               <table className="model"><tbody>
               {
                 !description ? null : <tr style={{ color: "#666", fontWeight: "normal" }}>
-                    <td style={{ fontWeight: "bold" }}>description:</td>
+                    <td style={{ fontWeight: "bold" }}>descrição:</td>
                     <td>
                       <Markdown source={ description } />
                     </td>

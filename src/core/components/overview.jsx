@@ -26,7 +26,7 @@ export default class Overview extends React.Component {
 
     return (
         <div>
-          <h4 className="overview-title">Overview</h4>
+          <h4 className="overview-title">Visão Global</h4>
 
           {
             taggedOps.map( (tagObj, tag) => {
@@ -67,7 +67,7 @@ export default class Overview extends React.Component {
             }).toArray()
           }
 
-          { taggedOps.size < 1 && <h3> No operations defined in spec! </h3> }
+          { taggedOps.size < 1 && <h3> Nenhuma operação definida na especificação! </h3> }
         </div>
     )
   }

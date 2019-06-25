@@ -119,7 +119,7 @@ export default class Topbar extends React.Component {
       })
 
       control.push(
-        <label className="select-label" htmlFor="select"><span>Select a definition</span>
+        <label className="select-label" htmlFor="select"><span>Selecione uma definição</span>
           <select id="select" disabled={isLoading} onChange={ this.onUrlSelect } value={urls[this.state.selectedIndex].url}>
             {rows}
           </select>
@@ -129,7 +129,7 @@ export default class Topbar extends React.Component {
     else {
       formOnSubmit = this.downloadUrl
       control.push(<input className="download-url-input" type="text" onChange={ this.onUrlChange } value={this.state.url} disabled={isLoading} style={inputStyle} />)
-      control.push(<Button className="download-url-button" onClick={ this.downloadUrl }>Explore</Button>)
+      control.push(<Button className="download-url-button" onClick={ this.downloadUrl }>Explorar</Button>)
     }
 
     return (

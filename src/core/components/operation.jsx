@@ -118,7 +118,7 @@ export default class Operation extends PureComponent {
               { (operation && operation.size) || operation === null ? null :
                 <img height={"32px"} width={"32px"} src={require("core/../img/rolling-load.svg")} className="opblock-loading-animation" />
               }
-              { deprecated && <h4 className="opblock-title_normal"> Warning: Deprecated</h4>}
+              { deprecated && <h4 className="opblock-title_normal"> Aviso: Depreciado</h4>}
               { description &&
                 <div className="opblock-description-wrapper">
                   <div className="opblock-description">
@@ -129,7 +129,7 @@ export default class Operation extends PureComponent {
               {
                 externalDocs && externalDocs.url ?
                 <div className="opblock-external-docs-wrapper">
-                  <h4 className="opblock-title_normal">Find more details</h4>
+                  <h4 className="opblock-title_normal">Encontre mais detalhes</h4>
                   <div className="opblock-external-docs">
                     <span className="opblock-external-docs__description">
                       <Markdown source={ externalDocs.description } />
