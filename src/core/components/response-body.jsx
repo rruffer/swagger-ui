@@ -87,7 +87,7 @@ export default class ResponseBody extends React.PureComponent {
             bodyEl = <div><a href={ href } download={ download }>{ "Download file" }</a></div>
         }
       } else {
-        bodyEl = <pre>Download headers detected but your browser does not support downloading binary via XHR (Blob).</pre>
+        bodyEl = <pre>Download de cabeçalhos detectados, mas o seu navegador não suporta o download de binários via XHR (Blob).</pre>
       }
 
       // Anything else (CORS)
@@ -133,7 +133,7 @@ export default class ResponseBody extends React.PureComponent {
         // in `updateParsedContent`, so let's display it
         bodyEl = <div>
           <p className="i">
-            Unrecognized response type; displaying content as text.
+          Tipo de resposta não reconhecido; exibindo conteúdo como texto.
           </p>
           <HighlightCode downloadable fileName={`${downloadName}.txt`} value={ parsedContent } />
         </div>
@@ -141,7 +141,7 @@ export default class ResponseBody extends React.PureComponent {
       } else {
         // Give up
         bodyEl = <p className="i">
-          Unrecognized response type; unable to display.
+          Tipo de resposta não reconhecido; incapaz de exibir.
         </p>
       }
     } else {

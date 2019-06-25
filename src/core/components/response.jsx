@@ -146,7 +146,7 @@ export default class Response extends React.Component {
                   contentTypes={ response.get("content") ? response.get("content").keySeq() : Seq() }
                   onChange={this._onContentTypeChange}
                   />
-                { controlsAcceptHeader ? <small>Controles <code>Aceitar</code> header.</small> : null }
+                { controlsAcceptHeader ? <small><code>MediaType</code> Header.</small> : null }
             </div>
              : null }
 
